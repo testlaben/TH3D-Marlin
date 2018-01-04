@@ -1,6 +1,7 @@
 /**
-* How to use this firmware
-* Uncomment (this means removing the 2 // in front of #define a printer model.
+* **************How to use this firmware - READ THIS*********************************
+*
+* Uncomment means removing the 2 // in front of #define.
 * 
 * If you have EZABL uncomment #define EZABL_ENABLE and then uncommend the mount
 * you are using with the printer. 
@@ -25,6 +26,8 @@
 * LCD go to Control > Initialize EEPROM to clear out the EEPROM to defaults.
 * 
 * ONLY UNCOMMENT ONE PRINTER TYPE. IF YOU UNCOMMENT MORE THAN ONE YOU WILL GET ERRORS.
+* If you get errors flashing READ the message it gives you and double check that you selected
+* the correct board from the Tools menu in Arduino.
 */
 
 #ifndef CONFIGURATION_H
