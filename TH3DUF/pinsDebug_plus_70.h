@@ -1,5 +1,5 @@
 /**
-* Marlin 3D Printer Firmware - Customized by TH3D Studio (TH3DStudio.com)
+ * Marlin 3D Printer Firmware
  * Copyright (C) 2017 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *

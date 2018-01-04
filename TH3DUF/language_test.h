@@ -1,5 +1,5 @@
 /**
-* Marlin 3D Printer Firmware - Customized by TH3D Studio (TH3DStudio.com)
+ * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -80,26 +80,26 @@
 #define STRG_C2_9 ""
 #define STRG_C2_a " ¡¢£¤¥¦§¨©ª«¬­®¯"
 #define STRG_C2_b "°±²³´µ¶·¸¹º»¼½¾¿"
-#define STRG_C3_8 "ÈÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ"
-#define STRG_C3_9 "ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß"
+#define STRG_C3_8 "È�?ÂÃÄÅÆÇÈÉÊËÌ�?Î�?"
+#define STRG_C3_9 "�?ÑÒÓÔÕÖ×ØÙÚÛÜ�?Þß"
 #define STRG_C3_a "àáâãäåæçèéêëìíîï"
 #define STRG_C3_b "ðñòóôõö÷øùúûüýþÿ"
 
-#define STRG_D0_8 "ЀЁЂЃЄЅІЇЈЉЊЋЌЍЎЏ"
-#define STRG_D0_9 "АБВГДЕЖЗИЙКЛМНОП"
+#define STRG_D0_8 "Ѐ�?ЂЃЄЅІЇЈЉЊЋЌ�?Ў�?"
+#define STRG_D0_9 "�?БВГДЕЖЗИЙКЛМ�?ОП"
 #define STRG_D0_a "РСТУФХЦЧШЩЪЫЬЭЮЯ"
 #define STRG_D0_b "абвгдежзийклмноп"
-#define STRG_D1_8 "рстуфхцчшщъыьэюя"
-#define STRG_D1_9 "ѐёђѓєѕіїјљњћќѝўџ"
+#define STRG_D1_8 "р�?туфхцчшщъыь�?ю�?"
+#define STRG_D1_9 "�?ёђѓєѕіїјљњћќ�?ўџ"
 #define STRG_D1_a "ѠѡѢѣѤѥѦѧѨѩѪѫѬѭѮѯ"
 #define STRG_D1_b "ѰѱѲѳѴѵѶѷѸѹѺѻѼѽѾѿ"
 
-#define STRG_E382_8 "よめもゃやゅゆょよらりるれろゎわ"
-#define STRG_E382_9 "ゐゑをんゔゕゖ゗゘゙゚゛ ゜ゝゞゟ"
+#define STRG_E382_8 "よ�?もゃやゅゆょよらりるれ�?ゎ�?"
+#define STRG_E382_9 "�?ゑをんゔゕゖ゗゘゙゚゛ ゜�?ゞゟ"
 #define STRG_E382_a "゠ァアィイゥウェエォオカガキギク"
 #define STRG_E382_b "グケゲコゴサザシジスズセゼソゾタ"
-#define STRG_E383_8 "トチヂッツヅテデトドナニヌネノハ"
-#define STRG_E383_9 "バパヒビピフブプヘベペホボポマミ"
+#define STRG_E383_8 "ト�?ヂッツヅテデトドナニヌ�?ノ�?"
+#define STRG_E383_9 "�?パヒビピフブプヘベペホボ�?マミ"
 #define STRG_E383_a "ムメモャヤュユョヨラリルレロヮワ"
 #define STRG_E383_b "ヰヱヲンヴヵヶヷヸヹヺ・ーヽヾヿ"
 

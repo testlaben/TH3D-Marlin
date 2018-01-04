@@ -1,5 +1,5 @@
 /**
-* Marlin 3D Printer Firmware - Customized by TH3D Studio (TH3DStudio.com)
+ * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -131,7 +131,7 @@
 #define MSG_CARD_MENU                       _UxGT("Imprimir do SD")
 #define MSG_NO_CARD                         _UxGT("Sem cartão SD")
 #define MSG_DWELL                           _UxGT("Em espera...")
-#define MSG_USERWAIT                        _UxGT("Á espera de ordem")
+#define MSG_USERWAIT                        _UxGT("�? espera de ordem")
 #define MSG_RESUMING                        _UxGT("Retomando impressão")
 #define MSG_PRINT_ABORTED                   _UxGT("Impressão cancelada")
 #define MSG_NO_MOVE                         _UxGT("Sem movimento")

@@ -1,5 +1,5 @@
 /**
-* Marlin 3D Printer Firmware - Customized by TH3D Studio (TH3DStudio.com)
+ * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -238,7 +238,7 @@
   #define MSG_FILAMENT_CHANGE_INIT_1          _UxGT("Proszę czekać...")
   #define MSG_FILAMENT_CHANGE_UNLOAD_1        _UxGT("Wysuwanie...")
   #define MSG_FILAMENT_CHANGE_INSERT_1        _UxGT("Włóż i naciśnij prz.")
-  #define MSG_FILAMENT_CHANGE_LOAD_1          _UxGT("Ładowanie...")
+  #define MSG_FILAMENT_CHANGE_LOAD_1          _UxGT("�?adowanie...")
   #define MSG_FILAMENT_CHANGE_EXTRUDE_1       _UxGT("Ekstruzja...")
   #define MSG_FILAMENT_CHANGE_RESUME_1        _UxGT("Wznowienie...")
 #endif // LCD_HEIGHT < 4

@@ -1,5 +1,5 @@
 /**
-* Marlin 3D Printer Firmware - Customized by TH3D Studio (TH3DStudio.com)
+ * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
@@ -65,9 +65,9 @@
                0xB8,0xB9,0xB9,0xBA,0xBA,0xBB,0xBB,0xBC,0xBC,0xBD,0xBD,0xBE,0xBE,0xBF,0xBF,0xC0,  // e382b
              // ク    ケ    ケ   コ    コ    サ    サ    シ    シ   ス    ス    セ    セ    ソ   ソ    タ
                0xC0,0xC1,0xC1,0xC2,0xC2,0xC2,0xC3,0xC3,0xC4,0xC4,0xC5,0xC6,0xC7,0xC8,0xC9,0xCA,  // e3838
-             // タ    チ    チ    ッ    ッ    ッ    テ   テ    ト    ト    ナ    ニ    ヌ    ネ   ノ    ハ
+             // タ    �?    �?    ッ    ッ    ッ    テ   テ    ト    ト    ナ    ニ    ヌ    �?   ノ    �?
                0xCA,0xCA,0xCB,0xCB,0xCB,0xCC,0xCC,0xCC,0xCD,0xCD,0xCD,0xCE,0xCE,0xCE,0xCF,0xD0,  // e3839
-             // ハ    ハ    ヒ   ヒ    ヒ     フ    フ   フ    ヘ    ヘ    ヘ    ホ    ホ    ホ   マ    ミ
+             // �?    �?    ヒ   ヒ    ヒ     フ    フ   フ    ヘ    ヘ    ヘ    ホ    ホ    ホ   マ    ミ
                0xD1,0xD2,0xD3,0xD4,0xD4,0xD5,0xD5,0xAE,0xD6,0xD7,0xD8,0xD9,0xDA,0xDB,0xDC,0xDC,  // e383a
              // ム    メ    モ    ャ   ャ    ユ    ユ    ョ    ヨ    ラ    リ    ル    レ    ロ   ワ    ワ
                0xEC,0xA7,0xA6,0xDD,0xCC,0x3F,0x3F,0x3F,0x3F,0x3F,0xA6,0xA5,0xB0,0xA4,0xA4,0x3F   // e383b
@@ -85,10 +85,10 @@
              //' '   ¡    ¢    £    ¤    ¥    ¦    §    "    ©    ª    «    ?    ?    ®    ?
                0xB0,0xB1,0xB2,0xB3,0x27,0xB5,0xB6,0xB7,0x2C,0xB9,0xBA,0xBB,0xBC,0xBD,0xBE,0xBF,  // c2b °±²³´µ¶·¸¹º»¼½¾¿
              // °    ±    ³    ²    ?    µ    ¶    ·    ,    ¹    º    »    ¼    ½    ¾    ¿
-               0xC0,0xC1,0xC2,0xC3,0xC4,0xC5,0xC6,0xC7,0xC8,0xC9,0xCA,0xCB,0xCC,0xCD,0xCE,0xCF,  // c38 ÀÁÃÄÅÆÇÈÉÊËÌÍÎÏ
-             // À    Á    Â    Ã    Ä    Å    Æ    Ç    È    É    Ê    Ë    Ì    Í    Î    Ï
-               0xD0,0xD1,0xD2,0xD3,0xD4,0xD5,0xD6,0xD7,0xD8,0xD9,0xDA,0xDB,0xDC,0xDD,0xDE,0xDF,  // c39 ÐÑÓÔÕÖ×ØÙÚÛÜÝÞß
-             // Ð    Ñ    Ò    Ó    Ô    Õ    Ö    ×    Ø    Ù    Ú    Û    Ü    Ý    Þ    ß
+               0xC0,0xC1,0xC2,0xC3,0xC4,0xC5,0xC6,0xC7,0xC8,0xC9,0xCA,0xCB,0xCC,0xCD,0xCE,0xCF,  // c38 À�?ÃÄÅÆÇÈÉÊËÌ�?Î�?
+             // À    �?    Â    Ã    Ä    Å    Æ    Ç    È    É    Ê    Ë    Ì    �?    Î    �?
+               0xD0,0xD1,0xD2,0xD3,0xD4,0xD5,0xD6,0xD7,0xD8,0xD9,0xDA,0xDB,0xDC,0xDD,0xDE,0xDF,  // c39 �?ÑÓÔÕÖ×ØÙÚÛÜ�?Þß
+             // �?    Ñ    Ò    Ó    Ô    Õ    Ö    ×    Ø    Ù    Ú    Û    Ü    �?    Þ    ß
                0xE0,0xE1,0xE2,0xE3,0xE4,0xE5,0xE6,0xE7,0xE8,0xE9,0xEA,0xEB,0xEC,0xED,0xEE,0xEF,  // c3a àáãäåæçèéêëìíîï
              // à    á    â    ã    ä    å    æ    ç    è    é    ê    ë    ì    í    î    ï
                0xF0,0xF1,0xF2,0xF3,0xF4,0xF5,0xF6,0xF7,0xF8,0xF9,0xFA,0xFB,0xFC,0xFD,0xFE,0xFF   // c3b ðñóôõö÷øùúûüýþÿ
@@ -115,24 +115,24 @@
     #if ENABLED(MAPPER_D0D1)
       #define MAPPER_D0D1_MOD
       // it is a Russian alphabet translation
-      // except 0401 --> 0xA2 = Ё, 0451 --> 0xB5 = ё
+      // except 0401 --> 0xA2 = �?, 0451 --> 0xB5 = ё
       const PROGMEM uint8_t utf_recode[] =
                { 0x41,0xA0,0x42,0xA1,0xE0,0x45,0xA3,0xA4,   // unicode U+0400 to U+047f
-               // A   Б->Ё  B    Г    Д    E    Ж    З      // 0  Ѐ Ё Ђ Ѓ Є Ѕ І Ї
-                 0xA5,0xA6,0x4B,0xA7,0x4D,0x48,0x4F,0xA8,   //    Ј Љ Њ Ћ Ќ Ѝ Ў Џ
-               // И    Й    K    Л    M    H    O    П      // 1  А Б В Г Д Е Ж З
-                 0x50,0x43,0x54,0xA9,0xAA,0x58,0xE1,0xAB,   //    И Й К Л М Н О П
+               // A   Б->�?  B    Г    Д    E    Ж    З      // 0  Ѐ �? Ђ Ѓ Є Ѕ І Ї
+                 0xA5,0xA6,0x4B,0xA7,0x4D,0x48,0x4F,0xA8,   //    Ј Љ Њ Ћ Ќ �? Ў �?
+               // И    Й    K    Л    M    H    O    П      // 1  �? Б В Г Д Е Ж З
+                 0x50,0x43,0x54,0xA9,0xAA,0x58,0xE1,0xAB,   //    И Й К Л М �? О П
                // P    C    T    У    Ф    X    Ч    ч      // 2  Р С Т У Ф Х Г Ч
                  0xAC,0xE2,0xAD,0xAE,0x62,0xAF,0xB0,0xB1,   //    Ш Щ Ъ Ы Ь Э Ю Я
                // Ш    Щ    Ъ    Ы    b    Э    Ю    Я      // 3  а б в г д е ж з
                  0x61,0xB2,0xB3,0xB4,0xE3,0x65,0xB6,0xB7,   //    и й к л м н о п
-               // a   б->ё  в    г    д    e    ж    з      // 4  р с т у ф х ц ч
-                 0xB8,0xB9,0xBA,0xBB,0xBC,0xBD,0x6F,0xBE,   //    ш щ ъ ы ь э ю я
-               // и    й    к    л    м    н    o    п      // 5  ѐ ё ђ ѓ є ѕ і ї
-                 0x70,0x63,0xBF,0x79,0xE4,0x78,0xE5,0xC0,   //    ј љ њ ћ ќ ѝ ў џ
+               // a   б->ё  в    г    д    e    ж    з      // 4  р �? т у ф х ц ч
+                 0xB8,0xB9,0xBA,0xBB,0xBC,0xBD,0x6F,0xBE,   //    ш щ ъ ы ь �? ю �?
+               // и    й    к    л    м    н    o    п      // 5  �? ё ђ ѓ є ѕ і ї
+                 0x70,0x63,0xBF,0x79,0xE4,0x78,0xE5,0xC0,   //    ј љ њ ћ ќ �? ў џ
                // p    c    т    y    ф    x    ц    ч      // 6  Ѡ ѡ Ѣ ѣ Ѥ ѥ Ѧ ѧ
                  0xC1,0xE6,0xC2,0xC3,0xC4,0xC5,0xC6,0xC7    //    Ѫ ѩ Ѫ ѫ Ѭ ѭ Ѯ ѯ
-               // ш    щ    ъ    ы    ь    э    ю      я      // 7  Ѱ ѱ Ѳ ѳ Ѵ ѵ Ѷ ѷ
+               // ш    щ    ъ    ы    ь    �?    ю      �?      // 7  Ѱ ѱ Ѳ ѳ Ѵ ѵ Ѷ ѷ
              };                                             //    ѻ ѹ Ѻ ѻ Ѽ ѽ Ѿ ѿ
     #elif ENABLED(MAPPER_C2C3)
       #error "Western languages on a CYRILLIC display makes no sense. There are no matching symbols."
@@ -298,7 +298,7 @@
 
   char charset_mapper(const char c) {
     // it is a Russian alphabet translation
-    // except 0401 --> 0xA2 = Ё, 0451 --> 0xB5 = ё
+    // except 0401 --> 0xA2 = �?, 0451 --> 0xB5 = ё
     static uint8_t utf_hi_char; // UTF-8 high part
     static bool seen_d5 = false;
     uint8_t d = c;
@@ -311,7 +311,7 @@
       else if (seen_d5) {
         d &= 0x3F;
         if (!utf_hi_char && d == 1) {
-          HARDWARE_CHAR_OUT(0xA2); // Ё
+          HARDWARE_CHAR_OUT(0xA2); // �?
         }
         else if (utf_hi_char == 1 && d == 0x11) {
           HARDWARE_CHAR_OUT(0xB5); // ё
@@ -407,7 +407,7 @@
    * ć C4 87 = 83
    * Ę C4 98 = 84
    * ę C4 99 = 85
-   * Ł C5 81 = 86
+   * �? C5 81 = 86
    * ł C5 82 = 87
    * Ń C5 83 = 88
    * ń C5 84 = 89
@@ -440,7 +440,7 @@
       }
       else if (seen_c5) {
         switch(d) {
-          case 0x81u ... 0x84u: d += 5; break;  //Ł - ń
+          case 0x81u ... 0x84u: d += 5; break;  //�? - ń
           case 0x9Au ... 0x9Bu: d -= 0x0Eu; break; //Ś i ś
           case 0xB9u ... 0xBCu: d -= 0x2Bu; break; //Ź - ż
           default: d = '?';
@@ -467,12 +467,12 @@
 #elif ENABLED(MAPPER_C3C4C5_CZ)
 
   /**
-   * Á C3 81 = 80
+   * �? C3 81 = 80
    * É C3 89 = 81
-   * Í C3 8D = 82
+   * �? C3 8D = 82
    * Ó C3 93 = 83
    * Ú C3 9A = 84
-   * Ý C3 9D = 85
+   * �? C3 9D = 85
    * á C3 A1 = 86
    * é C3 A9 = 87
    * í C3 AD = 88
@@ -480,9 +480,9 @@
    * ú C3 BA = 8A
    * ý C3 BD = 8B
    * Č C4 8C = 8C
-   * č C4 8D = 8D
+   * �? C4 8D = 8D
    * Ď C4 8E = 8E
-   * ď C4 8F = 8F
+   * �? C4 8F = 8F
    * Ě C4 9A = 90
    * ě C4 9B = 91
    * Ň C5 87 = 92
@@ -510,7 +510,7 @@
       else if (d == 0xC3u) { seen_c3 = true; return 0; }
       else if (seen_c4) {
         switch(d) {
-          case 0x8Cu ... 0x8Fu: break;          // ČčĎď Mapping 1:1
+          case 0x8Cu ... 0x8Fu: break;          // Č�?Ď�? Mapping 1:1
           case 0x9Au ... 0x9Bu: d -= 10; break; // Ěě
           default: d = '?';
         }
@@ -530,12 +530,12 @@
       }
       else if (seen_c3) {
         switch(d) {
-          case 0x81u: d = 0x80u; break;  // Á
+          case 0x81u: d = 0x80u; break;  // �?
           case 0x89u: d = 0x81u; break;  // É
-          case 0x8Du: d = 0x82u; break;  // Í
+          case 0x8Du: d = 0x82u; break;  // �?
           case 0x93u: d = 0x83u; break;  // Ó
           case 0x9Au: d = 0x84u; break;  // Ú
-          case 0x9Du: d = 0x85u; break;  // Ý
+          case 0x9Du: d = 0x85u; break;  // �?
           case 0xA1u: d = 0x86u; break;  // á
           case 0xA9u: d = 0x87u; break;  // é
           case 0xADu: d = 0x88u; break;  // í
@@ -558,14 +558,14 @@
 #elif ENABLED(MAPPER_C3C4C5_SK)
 
   /**
-   * Á C3 81 = 80
+   * �? C3 81 = 80
    * Ä C3 84 = 81
    * É C3 89 = 82
-   * Í C3 8D = 83
+   * �? C3 8D = 83
    * Ó C3 93 = 84
    * Ô C3 94 = 85
    * Ú C3 9A = 86
-   * Ý C3 9D = 87
+   * �? C3 9D = 87
    * á C3 A1 = 88
    * ä C3 A4 = 89
    * é C3 A9 = 8A
@@ -575,9 +575,9 @@
    * ú C3 BA = 8E
    * ý C3 BD = 8F
    * Č C4 8C = 90
-   * č C4 8D = 91
+   * �? C4 8D = 91
    * Ď C4 8E = 92
-   * ď C4 8F = 93
+   * �? C4 8F = 93
    * Ĺ C4 B9 = 94
    * ĺ C4 BA = 95
    * Ľ C4 BD = 96
@@ -605,7 +605,7 @@
       else if (d == 0xC3u) { seen_c3 = true; return 0; }
       else if (seen_c4) {
         switch(d) {
-          case 0x8Cu ... 0x8Fu: d += 0x04u; break;  // ČčĎď
+          case 0x8Cu ... 0x8Fu: d += 0x04u; break;  // Č�?Ď�?
           case 0xB9u ... 0xBAu: d -= 0x25u; break;  // Ĺĺ
           case 0xBDu ... 0xBEu: d -= 0x27u; break;  // Ľľ
           default: d = '?';
@@ -625,14 +625,14 @@
       }
       else if (seen_c3) {
         switch(d) {
-          case 0x81u: d = 0x80u; break;  // Á
+          case 0x81u: d = 0x80u; break;  // �?
           case 0x84u: d = 0x81u; break;  // Ä
           case 0x89u: d = 0x82u; break;  // É
-          case 0x8Du: d = 0x83u; break;  // Í
+          case 0x8Du: d = 0x83u; break;  // �?
           case 0x93u: d = 0x84u; break;  // Ó
           case 0x94u: d = 0x85u; break;  // Ô
           case 0x9Au: d = 0x86u; break;  // Ú
-          case 0x9Du: d = 0x87u; break;  // Ý
+          case 0x9Du: d = 0x87u; break;  // �?
           case 0xA1u: d = 0x88u; break;  // á
           case 0xA4u: d = 0x89u; break;  // ä
           case 0xA9u: d = 0x8Au; break;  // é
