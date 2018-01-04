@@ -36,7 +36,7 @@
 //===========================================================================
 
 //===========================================================================
-// Creality CR-10 Options
+// Creality CR-10 Options - Select Sanguino(1284P) from Tools
 //===========================================================================
 //#define CR10
 //#define CR10_MINI
@@ -57,7 +57,7 @@
 //#define CUSTOM_PROBE
 
 //===========================================================================
-// Creality CR-10S Options
+// Creality CR-10S Options - Select Arduino Mega 2560 from Tools
 //===========================================================================
 //#define CR10S
 //#define CR10S_MINI
@@ -80,7 +80,7 @@
 //#define CUSTOM_PROBE
 
 //===========================================================================
-// Creality Ender 2 Options
+// Creality Ender 2 Options - Select Sanguino(1284P) from Tools
 //===========================================================================
 //#define ENDER2
 
@@ -94,7 +94,7 @@
 //#define CUSTOM_PROBE
 
 //===========================================================================
-// TEVO Tornado Options
+// TEVO Tornado Options - Select Arduino Mega 2560 from Tools
 //===========================================================================
 //#define TORNADO
 
@@ -110,7 +110,7 @@
 //#define TORNADO_BOOT
 
 //===========================================================================
-// Lulzbot TAZ5 Options
+// Lulzbot TAZ5 Options - Select Arduino Mega 2560 from Tools
 //===========================================================================
 //#define TAZ5
 
@@ -129,6 +129,7 @@
 // If you want more or less EZABL probe points change the number below
 // Default is 4 which gives you 4x4 grid. Do not go over 10 here.
 // Ender 2 will be best with a 3x3 grid, change to a 3 for Ender 2
+// DO NOT DISABLE THIS. LEAVE UNCOMMENTED EVEN IF NOT USING EZABL.
 #define EZABL_POINTS 4
 
 // If you are using a V6 Hotend with the V6 Thermistor 
@@ -143,6 +144,7 @@
 // to setup the firmware to the correct steps and direction
 //#define TITAN_EXTRUDER
 // If your titan uses steps/mm other than 463 change it below, this works for most Titans
+// DO NOT DISABLE THIS. ONLY USED IF YOU ENABLE TITAN_EXTRUDER.
 #define TITAN_EXTRUDER_STEPS 463
 
 // Use TinyMachines Bootscreen instead of TH3D
