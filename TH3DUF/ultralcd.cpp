@@ -2568,9 +2568,7 @@ void kill_screen(const char* lcd_msg) {
       //
       // Set Home Offsets
       //
-      #if DISABLED(SLIM_1284P)
-        MENU_ITEM(function, MSG_SET_HOME_OFFSETS, lcd_set_home_offsets);
-      #endif
+      //MENU_ITEM(function, MSG_SET_HOME_OFFSETS, lcd_set_home_offsets);
       //MENU_ITEM(gcode, MSG_SET_ORIGIN, PSTR("G92 X0 Y0 Z0"));
     #endif
 
@@ -3611,22 +3609,22 @@ void kill_screen(const char* lcd_msg) {
     #endif
 
     // M203 / M205 - Feedrate items
-    #if DISABLED(SLIM_1284P)
+    #if DISABLED(SLIM_1284P) || (ENABLED(SLIM_1284P) && DISABLED(EZABL_ENABLE))
       MENU_ITEM(submenu, MSG_VELOCITY, lcd_control_motion_velocity_menu);
     #endif
     
     // M201 - Acceleration items
-    #if DISABLED(SLIM_1284P)
+    #if DISABLED(SLIM_1284P) || (ENABLED(SLIM_1284P) && DISABLED(EZABL_ENABLE))
       MENU_ITEM(submenu, MSG_ACCELERATION, lcd_control_motion_acceleration_menu);
     #endif
     
     // M205 - Max Jerk
-    #if DISABLED(SLIM_1284P)
+    #if DISABLED(SLIM_1284P) || (ENABLED(SLIM_1284P) && DISABLED(EZABL_ENABLE))
       MENU_ITEM(submenu, MSG_JERK, lcd_control_motion_jerk_menu);
     #endif
 
     // M92 - Steps Per mm
-    #if DISABLED(SLIM_1284P)
+    #if DISABLED(SLIM_1284P) || (ENABLED(SLIM_1284P) && DISABLED(EZABL_ENABLE))
       MENU_ITEM(submenu, MSG_STEPS_PER_MM, lcd_control_motion_steps_per_mm_menu);
     #endif
     
