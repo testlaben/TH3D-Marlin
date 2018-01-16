@@ -123,8 +123,8 @@
 
 // Probe Mounts
 //#define TORNADO_OEM
-//#define CR10_VOLCANO
-//#define CR10_V6HEAVYDUTY
+//#define TORNADO_VOLCANO
+//#define TORNADO_V6HEAVYDUTY
 //#define CUSTOM_PROBE
 
 // Use Tornado Bootscreen instead of TH3D
