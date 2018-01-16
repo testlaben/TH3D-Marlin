@@ -30,13 +30,10 @@
  * See http://www.instructables.com/id/Burn-Arduino-Bootloader-with-Arduino-MEGA/
  */
 
-#define BOARD_NAME "Melzi (Creality)"
+#define BOARD_NAME "Melzi (Ender2)"
 #define IS_MELZI
 
 #include "pins_SANGUINOLOLU_12.h"
-
-// For the stock CR-10 use the REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
-//   option for the display in Configuration.h
 
 #undef LCD_SDSS
 #undef LED_PIN
@@ -51,7 +48,7 @@
 // SD LCD Fix from https://www.facebook.com/groups/1469255646470283/permalink/1634507159945130/
 #undef DOGLCD_CS
 #define DOGLCD_CS 28 // DOG CS
-#define LCD_SDSS        31 // Smart Controller SD card reader (rather than the Melzi)
+#define LCD_SDSS        31 
 //#define LCD_PINS_RS     28 // st9720 CS
 //#define LCD_PINS_ENABLE 17 // st9720 DAT
 //#define LCD_PINS_D4     30 // st9720 CLK

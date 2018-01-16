@@ -1,0 +1,2 @@
+add cr-10 lcd on cr-10s board option
+add left side mount for CR-10 & tornado

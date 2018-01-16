@@ -22,7 +22,7 @@
 * Thats it! 
 * 
 * !!!!!!!CAUTION!!!!!!!
-* Be sure to either send M502 then M500 to reset your EEPROM or on the printer
+* After updating be sure to either send M502 then M500 to reset your EEPROM or on the printer
 * LCD go to Control > Initialize EEPROM to clear out the EEPROM to defaults.
 * 
 * ONLY UNCOMMENT ONE PRINTER TYPE. IF YOU UNCOMMENT MORE THAN ONE YOU WILL GET ERRORS.
@@ -46,6 +46,8 @@
 //#define CR10_S4
 //#define CR10_S5
 
+// If you are using our EZOut filament sensor kit please follow the install guide
+// and then uncomment the #define EZOUT_ENABLE line below.
 //#define EZOUT_ENABLE
 
 // EZABL Settings - Uncomment #define EZABL_ENABLE and uncomment your mount 
@@ -67,9 +69,23 @@
 //#define CR10S_S4
 //#define CR10S_S5
 
-// If you are having issues with your CR-10S filament sensor uncomment 
-// the below line to disable it in the firmware
+// If you are having issues with your stock CR-10S filament sensor uncomment 
+// the below line to disable it in the firmware. We sell EZOUT kits to replace this.
+// DO NOT ENABLE THIS IF YOU ARE REPLACING OR ADDING THE EZOUT.
 //#define CR10S_NOFILAMENTSENSOR
+
+// If you want to use the CR-10 LCD with the CR-10S board uncomment the below line
+// then connect the LCD cable to EXP1 on the CR-10S board but rotate it 180 degrees.
+// You will have to force it in but it will fit and work. If you also have an EZOUT
+// this makes rotating the cable painless since the EZOut is not keyed.
+//#define CR10LCD_CR10S
+
+// If you are using our EZOut filament sensor kit please follow the install guide
+// and then uncomment the #define EZOUT_ENABLE line below. Connect to the EXP1 LCD
+// connection on the CR-10S board. This will override the stock Creality sensor if you have one
+// DO NOT EVER PLUG THE EZOUT SENSOR INTO THE ENDSTOP CONNECTIONS ON THE CR-10S BOARD
+// THE EZOUT SENSOR MUST ALWAYS CONNECT TO THE EZOUT BOARD. SEE INSTALL GUIDE FOR DETAILS.
+//#define EZOUT_ENABLE
 
 // EZABL Settings - Uncomment #define EZABL_ENABLE and uncomment your mount 
 // type you are using to enable EZABL Bed Leveing features
@@ -107,6 +123,8 @@
 
 // Probe Mounts
 //#define TORNADO_OEM
+//#define CR10_VOLCANO
+//#define CR10_V6HEAVYDUTY
 //#define CUSTOM_PROBE
 
 // Use Tornado Bootscreen instead of TH3D
@@ -134,6 +152,16 @@
 // Ender 2 will be best with a 3x3 grid, change to a 3 for Ender 2
 // DO NOT DISABLE THIS. LEAVE UNCOMMENTED EVEN IF NOT USING EZABL.
 #define EZABL_POINTS 4
+
+// If you use large binder clips to hold your glass or other surface please
+// uncomment this line to make the probing area set further in. If the sensor
+// probes over a binder clip it will give it an invalid reading.
+//#define BINDER_CLIPS
+
+// If you are having leveling issues with the EZABL try uncommenting the below
+// line. This will change the leveling type from bilinear to linear. Some printers
+// do better with linear leveling instead of bilinear.
+//#define LINEAR_LEVELING
 
 // If you are using a V6 Hotend with the V6 Thermistor 
 // uncomment the below line  to set the correct thermistor settings

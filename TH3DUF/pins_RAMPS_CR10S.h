@@ -68,6 +68,12 @@
   #define SERVO3_PIN        4
 #endif
 
+#if ENABLED(EZOUT_ENABLE)
+  #define FIL_RUNOUT_PIN      37
+#else
+  #define FIL_RUNOUT_PIN      2
+#endif
+
 //
 // Limit Switches
 //
@@ -253,9 +259,6 @@
   #define FILWIDTH_PIN      5   // Analog Input on AUX2
 #endif
 
-// define digital pin 4 for the filament runout sensor. Use the RAMPS 1.4 digital input 4 on the servos connector
-#define FIL_RUNOUT_PIN      2
-
 #ifndef PS_ON_PIN
   #define PS_ON_PIN        12
 #endif
@@ -331,7 +334,11 @@
       #define LCD_PINS_D4       25
 
       #if DISABLED(NEWPANEL)
-        #define BEEPER_PIN      37
+        #if ENABLED(EZOUT_ENABLE)
+          #define BEEPER_PIN      -1
+         #else
+          #define BEEPER_PIN      37
+        #endif
       #endif
 
     #else
