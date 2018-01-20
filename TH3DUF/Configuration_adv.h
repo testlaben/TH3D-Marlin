@@ -209,6 +209,9 @@
 	#define LCD_DECIMAL_SMALL_XY
 #endif
 
+  // Add an 'M73' G-code to set the current percentage
+  #define LCD_SET_PROGRESS_MANUALLY
+
 #if ENABLED(SDSUPPORT)
 
   // Some RAMPS and other boards don't detect when an SD card is inserted. You can work
