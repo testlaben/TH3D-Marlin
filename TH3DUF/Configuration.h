@@ -171,6 +171,10 @@
 // uncomment the below line to disable the heated bed control in the firmware
 //#define AC_BED
 
+// If you are using the Keenovo bed with a SSR and the Keenovo temperature sensor uncomment
+// the below line to enable the changes to use the Keenovo thermistor
+//#define KEENOVO_TEMPSENSOR
+
 // If you are using an E3D or TH3D Titan Extruder uncomment the below line 
 // to setup the firmware to the correct steps and direction
 //#define TITAN_EXTRUDER

@@ -409,6 +409,8 @@
   #define TEMP_SENSOR_BED 0
 #elif ENABLED(TAZ5)
   #define TEMP_SENSOR_BED 7
+#elif ENABLED(KEENOVO_TEMPSENSOR)
+  #define TEMP_SENSOR_BED 11
 #else
   #define TEMP_SENSOR_BED 5
 #endif
