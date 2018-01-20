@@ -263,6 +263,9 @@
   #define X_BED_SIZE 300
   #define Y_BED_SIZE 300
   #define Z_MAX_POS 400
+
+  #define REVERSE_ENCODER_DIRECTION
+
 #endif //end tornado
 
 //TAZ5 Model Settings
